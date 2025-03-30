@@ -208,7 +208,14 @@ body {
         padding: 0.6rem 1rem;
     }
 }
-
+.capaimg {
+    width: 40%;
+    height: auto;
+    border-radius: 8px;
+    margin: 2rem auto; /* Centers the element horizontally */
+    display: block; /* Ensures the margin auto works */
+    box-shadow: 0 4px 20px rgba(0, 255, 136, 0.1);
+}
 .image {
     border: 2px solid var(--secondary);
     border-radius: 8px;
@@ -220,11 +227,4 @@ body {
     transform: scale(1.02);
     box-shadow: 0 0 25px rgba(0, 255, 136, 0.2);
 }
-.capaimg {
-    width: 40%;
-    height: auto;
-    border-radius: 8px;
-    margin: 2rem auto; /* Centers the element horizontally */
-    display: block; /* Ensures the margin auto works */
-    box-shadow: 0 4px 20px rgba(0, 255, 136, 0.1);
-}
+
