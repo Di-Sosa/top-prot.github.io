@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capa Física</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li class="nav-item"><a href="index.html" class="nav-link">Topologias</a></li>
+            <li class="nav-item"><a href="capa 2.html" class="nav-link">Protocolos</a></li>
+
+        </ul>
+    </nav>
+    <div class="content">
+        <header class="top">
+            <h1 class="main-title">Capa Física</h1>
+            <p class="description">
+                La capa más básica define las especificaciones eléctricas, mecánicas, procedimentales y funcionales para activar, mantener y desactivar el enlace físico entre sistemas. Transmite el flujo de bits a través del medio. <br>
+                <strong>Ejemplo real:</strong> El cable Ethernet que conecta tu computadora al router transmite señales eléctricas que representan los bits de información a través de sus conectores RJ-45, operando completamente en la capa física.
+            </p>
+            <img src="https://lh6.googleusercontent.com/qhdjlaBzbb0mzE3bW--beLMydBLumtQk16sDWCUqeUbgpDCgRKe8lFH2ZKY-lzDiqzlCNwWCAIJK4cMoW_n5ucCuML4wU6tdDOfu6ofsF_l7A0qS7o6wYyKFb0w4qomp-A=w1280" alt="Capa Física" class="image">
+        </header>
+        <section class="topologies">
+            <h2 class="section-title">Topologías de la Red</h2>
+            <p class="description">
+                Las topologías de red son las diferentes distribuciones de los dispositivos, como enrutadores, computadoras, impresoras, y las distintas conexiones que pueden haber en la red. Se pueden ilustrar gráficamente.
+            </p>
+            <h2 class="section-title">Tipos de topologías de red y sus características</h2>
+            <p class="description">
+                Topologías físicas. Se refiere al diseño de las interconexiones entre los dispositivos y las conexiones físicas de la red, como cable (DSL, Ethernet), microondas o fibra óptica. Existen varias topologías físicas comunes, como se muestra en la siguiente ilustración y se describen posteriormente.
+            </p>
+            <ul class="topology-list">
+                <li class="topology-item">
+                    <strong>Red de bus:</strong> Cada dispositivo está conectado en serie a lo largo de una ruta lineal. Esta disposición se encuentra hoy principalmente en las redes de distribución cableada de banda ancha.
+                    <img src="https://lh4.googleusercontent.com/1-vf3lzrA18FYwAuKCVRww1M7P2nK1Qeg8wfz_SudcambiRvoElXnYxLMYP6oUnhmFnLHMwHY7bQpf570uCkVF6KtI4827lTjpRS2TVF3A0A0D3tllYA8osfl24ME1r1Vg=w1280" alt="Red de bus" class="image">
+                </li>
+                <li class="topology-item">
+                    <strong>Red de estrella:</strong> En esta red, un dispositivo central está conectado directamente con todos los demás dispositivos. Las redes de área local (LAN) que utilizan conmutadores Ethernet, como la mayoría de las redes cableadas de oficina, tienen una configuración de estrella.
+                    <img src="https://lh6.googleusercontent.com/uXFij_D1dDrvhLEKHsp6j8o8tY0lrsTLxluPawne3xG1wKsyBzY0-PIxWpnNmY53gRqepQFoJ7VSa14qkdfpIubsigEhHkw6h3LcqjtpI_Y_sNo6bYMSQH3Y9jgfCkQn2Q=w1280" alt="Red de estrella" class="image">
+                </li>
+                <li class="topology-item">
+                    <strong>Red en anillo:</strong> En esta configuración, los dispositivos están conectados en una red como un círculo. Unas redes enviarán la señal en un solo sentido y otras podrán enviar la señal en los dos sentidos.
+                    <img src="https://lh5.googleusercontent.com/LpEtohP03Y_vwDNXwJqlhiwkqcWjmXgqGIc1Ijvv5wyr8XBygi748TWgp2ELkFAWEtz6DshkI_RnZVzWeRpysR4DOCOSuR8eZfD9u_ju5WxbiwYO1s3lHbvx7GhIvbKb7w=w1280" alt="Red en anillo" class="image">
+                </li>
+                <li class="topology-item">
+                    <strong>Red de malla:</strong> Esta red enlaza las conexiones con los dispositivos de tal manera que haya disponibles múltiples rutas entre al menos algunos puntos de la red.
+                    <img src="https://lh5.googleusercontent.com/8YQwCISBDaz7NWFTfwXS348m1eoL-SyEshemIhWxtScU88cCmwNSDwpkobRrh9xElHUshvxbC2aRgdWDigzgugauCXGzGWUijq0ZWojDezojWh2aMn6s0uJfHF5QBhuOlA=w1280" alt="Red de malla" class="image">
+                </li>
+                <li class="topology-item">
+                    <strong>Red de árbol:</strong> Llamada también estrella de estrellas, en ella se conectan diferentes topologías de estrella en una configuración de estrella. <br>
+
+                    <img src="https://lh4.googleusercontent.com/KP91Rb2Vl8KIQIWc0WsgJj_XVA73noI22-eodpY9MtQCMs7kFFe570RN49hRPFW9DWGyxIqZMJZpgXGtrtX5xcQaxPwjIhSq9WLna81hwWZuz9aDzjkiY1_BYjv6wY7Kjw=w1280" alt="Red de árbol" class="image">
+                </li>
+            </ul>
+<p><strong>Topologías lógicas.</strong> La topología lógica para una red es algo más estratégica y abstracta. Generalmente consiste en comprender conceptualmente cómo y por qué la red está organizada de la forma en que está, y cómo se mueven los datos a través de ella. Se refiere a la relación lógica entre los dispositivos y las conexiones. Una conexión lógica diferirá de una ruta física cuando la información pueda dar un salto invisible en puntos intermedios. En las redes ópticas, los multiplexores ópticos (ADM) crean rutas ópticas lógicas, porque el salto ADM no es visible para los nodos del punto final. Las redes compuestas por circuitos virtuales tendrán una topología física de acuerdo al ámbito real de conexión, como el cable, y una topología lógica basada en los circuitos. En ciertas ocasiones, la topología lógica corresponde a la configuración tal como la ve el usuario, lo que significa la conectividad de la red.</p>
+<p><strong>Redes IP y Ethernet.</strong> Las dos redes más utilizadas hoy en día, IP y Ethernet, están totalmente entretejidas a nivel de conexión porque cualquier usuario puede conectarse con cualquier otro, a menos que se introduzca algún medio, como un firewall, para bloquear conexiones no deseadas. La conectividad total se debe a los protocolos que se manejan en la red, como Ethernet, y no de la topología física de la red como tal. Por tal razón, para las personas cualquier topología física de red podrá parecer totalmente entrelazada.</p>
+        </section>
+        <section class="network-types">
+            <h2 class="section-title">Tipos de redes</h2>
+            <table border="1" class="network-table">
+                <thead>
+                    <tr class="table-header">
+                        <th>Tipo de Red</th>
+                        <th>Definición</th>
+                        <th>Características</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-row">
+                        <td>LAN (Local Area Network)</td>
+                        <td>Red de área local que conecta dispositivos en un área geográfica pequeña (como una casa, oficina o edificio).</td>
+                        <td>
+                            <ul class="features-list">
+                                <li>Usa cables Ethernet o switches para conexiones físicas.</li>
+                                <li>Alta velocidad de transferencia de datos.</li>
+                            </ul>
+                        </td>
+                        <td>Redes en empresas para compartir impresoras o servidores.</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>WLAN (Wireless Local Area Network)</td>
+                        <td>Red de área local inalámbrica que permite conexiones sin cables mediante tecnología Wi-Fi.</td>
+                        <td>
+                            <ul class="features-list">
+                                <li>Basada en estándares IEEE 802.11 (como Wi-Fi 6).</li>
+                                <li>Usa puntos de acceso (routers) para conectar dispositivos.</li>
+                            </ul>
+                        </td>
+                        <td>Red doméstica Wi-Fi o conexión en cafeterías.</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>WAN (Wide Area Network)</td>
+                        <td>Red de área amplia que interconecta múltiples LANs en grandes distancias (ciudades, países o globalmente).</td>
+                        <td>
+                            <ul class="features-list">
+                                <li>Utiliza infraestructura pública o privada (fibra óptica, satélites).</li>
+                            </ul>
+                        </td>
+                        <td>Internet o redes corporativas que unen sucursales en diferentes países.</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>VPN (Virtual Private Network)</td>
+                        <td>Red privada virtual que crea un túnel cifrado sobre una red pública (como Internet) para acceder a recursos de forma segura.</td>
+                        <td>
+                            <ul class="features-list">
+                                <li>Encripta datos para proteger la privacidad.</li>
+                                <li>Permite acceder a redes internas desde ubicaciones remotas.</li>
+                            </ul>
+                        </td>
+                        <td>Trabajadores que acceden a la red de su empresa desde casa.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

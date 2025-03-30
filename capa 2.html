@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li class="nav-item"><a href="index.html" class="nav-link">Topologias</a></li>
+            <li class="nav-item"><a href="capa 2.html" class="nav-link">Protocolos</a></li>
+
+        </ul>
+    </nav>
+    <h1 class="main-title">Protocolos</h1>
+    <section class="content">
+        <h2 class="section-title">Capa 2: Enlace de Datos (Data Link Layer)</h2>
+        <p class="description">Función: Transmisión confiable de tramas en una red física, control de acceso al medio (MAC) y detección/corrección de errores.</p>
+        <h3 class="sub-title">Protocolos y estándares:</h3>
+        <ul class="features-list">
+            <li>Ethernet (IEEE 802.3): Dominante en redes cableadas (LAN).</li>
+            <li>Wi-Fi (IEEE 802.11): Para redes inalámbricas (ej: 802.11ac, Wi-Fi 6).</li>
+            <li>PPP (Point-to-Point Protocol): Conexiones punto a punto (ej: DSL).</li>
+            <li>MAC (Media Access Control): Direccionamiento físico (ej: direcciones como 00:1A:2B:3C:4D:5E).</li>
+            <li>VLAN (IEEE 802.1Q): Segmentación de redes lógicas en switches.</li>
+            <li>ARP (Address Resolution Protocol): Resuelve direcciones IP a MAC.</li>
+            <li>HDLC (High-Level Data Link Control): Comunicación síncrona (WAN).</li>
+            <li>Frame Relay: Obsoleto, usado en redes de conmutación de paquetes.</li>
+        </ul>
+        <p class="description">Dispositivos: Switches, bridges, tarjetas de red (NIC).</p>
+    </section>
+    
+    <section class="content">
+        <h2 class="section-title">Capa 3: Red (Network Layer)</h2>
+        <p class="description">Función: Enrutamiento de paquetes entre redes usando direcciones lógicas (IP).</p>
+        <h3 class="sub-title">Protocolos y estándares:</h3>
+        <ul class="features-list">
+            <li>IP (Internet Protocol): IPv4 (ej: 192.168.1.1) e IPv6 (ej: 2001:0db8:85a3::).</li>
+            <li>ICMP (Internet Control Message Protocol): Diagnóstico y errores (ej: ping, traceroute).</li>
+            <li>IPsec (IP Security): Cifrado y autenticación de paquetes.</li>
+            <li>OSPF (Open Shortest Path First): Protocolo de enrutamiento dinámico.</li>
+            <li>BGP (Border Gateway Protocol): Enrutamiento entre sistemas autónomos (Internet).</li>
+            <li>RIP (Routing Information Protocol): Enrutamiento básico (obsoleto).</li>
+            <li>GRE (Generic Routing Encapsulation): Túneles para VPNs.</li>
+        </ul>
+        <p class="description">Dispositivos: Routers, firewalls de capa 3.</p>
+    </section>
+    
+    <section class="content">
+        <h2 class="section-title">Capa 4: Transporte (Transport Layer)</h2>
+        <p class="description">Función: Control de flujo, segmentación y entrega confiable de datos (puertos lógicos).</p>
+        <h3 class="sub-title">Protocolos y estándares:</h3>
+        <ul class="features-list">
+            <li>TCP (Transmission Control Protocol): Conexión confiable (ej: navegación web, correo).</li>
+            <li>UDP (User Datagram Protocol): Conexión no confiable (ej: streaming, VoIP).</li>
+            <li>SCTP (Stream Control Transmission Protocol): Para telecomunicaciones (ej: 4G/5G).</li>
+            <li>DCCP (Datagram Congestion Control Protocol): Mezcla de TCP/UDP (ej: streaming en tiempo real).</li>
+        </ul>
+        <p class="description">Ejemplos de puertos:</p>
+        <ul class="features-list">
+            <li>TCP 80 (HTTP), TCP 443 (HTTPS), UDP 53 (DNS), UDP 123 (NTP).</li>
+        </ul>
+    </section>
+    
+    <section class="content">
+        <h2 class="section-title">Capa 5: Sesión (Session Layer)</h2>
+        <p class="description">Función: Gestión de sesiones (inicio, mantenimiento y cierre de conexiones).</p>
+        <h3 class="sub-title">Protocolos y estándares:</h3>
+        <ul class="features-list">
+            <li>NetBIOS: Comunicación en redes locales (legado Windows).</li>
+            <li>RPC (Remote Procedure Call): Llamadas a funciones remotas.</li>
+            <li>SIP (Session Initiation Protocol): Establece sesiones VoIP o videollamadas.</li>
+            <li>PPTP (Point-to-Point Tunneling Protocol): Túneles VPN (obsoleto).</li>
+            <li>TLS/SSL (Transport Layer Security/Secure Sockets Layer): Gestiona sesiones seguras (aunque también trabaja en capa 6).</li>
+        </ul>
+    </section>
+    
+    <section class="content">
+        <h2 class="section-title">Capa 6: Presentación (Presentation Layer)</h2>
+        <p class="description">Función: Traducción de datos (formato, cifrado, compresión).</p>
+        <h3 class="sub-title">Protocolos y estándares:</h3>
+        <ul class="features-list">
+            <li>TLS/SSL: Cifrado de datos (ej: HTTPS).</li>
+            <li>JPEG/PNG/MP3: Formatos de compresión de imágenes/audio.</li>
+            <li>ASCII/Unicode: Codificación de texto.</li>
+            <li>MPEG: Codificación de video.</li>
+            <li>AES/DES: Algoritmos de cifrado (aplicados aquí o en capa 7).</li>
+        </ul>
+    </section>
+    
+    <section class="content">
+        <h2 class="section-title">Capa 7: Aplicación (Application Layer)</h2>
+        <p class="description">Función: Interfaz para aplicaciones de usuario y servicios de red.</p>
+        <h3 class="sub-title">Protocolos y estándares:</h3>
+        <ul class="features-list">
+            <li>HTTP/HTTPS: Navegación web.</li>
+            <li>DNS (Domain Name System): Resolución de nombres a IPs.</li>
+            <li>SMTP/POP3/IMAP: Envío y recepción de correos electrónicos.</li>
+            <li>FTP/SFTP/SCP: Transferencia de archivos.</li>
+            <li>SNMP (Simple Network Management Protocol): Monitoreo de red.</li>
+            <li>SSH (Secure Shell): Acceso remoto seguro.</li>
+            <li>DHCP (Dynamic Host Configuration Protocol): Asignación automática de IPs.</li>
+            <li>Telnet: Acceso remoto sin cifrar (obsoleto).</li>
+        </ul>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
